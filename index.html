@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<boby>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <!-- Logo instagram -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="fa-brands fa-instagram"></i>
+          Instragram
+        </a><!-- Logo instagram -->
+        <div class="d-flex flex-row">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success me-2 " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Create a new post
+          </button>
+            <!-- Button trigger modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      
+        <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+             <h1 class="modal-title fs-5" id="staticBackdropLabel fw-bold">Create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                         <label for="formGroupExampleInput" class="form-label fw-bold">Caption:</label>
+                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Add the caption of your post here">
+                    </div>
+                      <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                      <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                 </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    <!-- Button trigger modal --> 
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" >
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><a class="dropdown-item text-danger" href="#">Log out </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Navs & tabs / Navegaciones y pestañas -->
+    <nav>
+      <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <button class="nav-link " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab"
+          aria-controls="grid" aria-selected="false"><i class="fa-solid fa-table-cells"></i></button>
+        <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#central"
+          type="button" role="tab" aria-controls="central" aria-selected="true"><i
+            class="fa-solid fa-square"></i></button>
+      </div>
+    </nav>
+    <div class="tab-content container-fluid" id="nav-tabContent">
+      <div class="tab-pane fade " id="grid" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"> <!--Cuadricula-->
+          <div class="row " >
+            <div class="col-4 p-2"><img src="https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " class="img-fluid" alt="Error"></div>
+            <div class="col-4 p-2"><img src="https://images.pexels.com/photos/13911167/pexels-photo-13911167.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid " alt="Error"></div>
+            <div class="col-4 p-2"><img src="https://picsum.photos/id/44/367/267" class="img-fluid" alt="Error"></div>
+          </div>
+          <div class="row" >
+            <div class="col-4 p-2"><img src="https://fastly.picsum.photos/id/96/4752/3168.jpg?hmac=KNXudB1q84CHl2opIFEY4ph12da5JD5GzKzH5SeuRVM" class="img-fluid" alt="Error"></div>
+            <div class="col-4 p-2"><img src="https://picsum.photos/id/111/367/267" class="img-fluid" alt="Error"></div>
+            <div class="col-4 p-2"><img src="https://picsum.photos/id/119/367/267" class="img-fluid" alt="Error"></div>
+          </div>
+          <div class="row" >
+            <div class="col-4 p-2"><img src="https://picsum.photos/id/172/367/267 " class="img-fluid" alt="Error"></div>
+            <div class="col-4 p-2"><img src="https://picsum.photos/id/179/367/267" class="img-fluid" alt="Error"></div>
+            <div class="col-4 p-2"><img src="https://picsum.photos/id/183/367/267" class="img-fluid" alt="Error"></div>
+          </div>
+      </div><!--Cuadricula fin-->
+      <div class="tab-pane fade show active d-flex flex-column align-items-center " id="central" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"> <!--Central-->
+        <div class="card m-4" style="width: 40rem;">
+             <div class="card-body p-0 ">
+                <div class=" d-flex justify-content-between p-2">
+                  <h5 class="card-title">Garvin St. Villier</h5> 
+                  <p class="card-text">02/23</p>
+                </div>
+               <img src="https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " class="card-img-top" alt="Error">
+                <p class="card-text fw-bold px-2 m-0">203 ♥Likes</p>
+                <p class="card-text px-2 pb-2">Dicen que los coches rojos llaman más la atención.</p>
+              </div>              
+        </div><!--post fin-->
+        <div class="card m-4" style="width: 40rem;">
+             <div class="card-body p-0 ">
+                <div class=" d-flex justify-content-between p-2">
+                  <h5 class="card-title">Blessing</h5> 
+                  <p class="card-text">09/24</p>
+                </div>
+               <img src="https://images.pexels.com/photos/13911167/pexels-photo-13911167.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Error">
+                <p class="card-text fw-bold px-2 m-0">80.052 ♥Likes</p>
+                <p class="card-text px-2 pb-2">"Datsun: donde la herencia japonesa se encuentra con la pasión por la carretera."</p>
+              </div>              
+        </div><!--post fin 2-->
+        <div class="card m-4" style="width: 40rem;">
+             <div class="card-body p-0 ">
+                <div class=" d-flex justify-content-between p-2">
+                  <h5 class="card-title">Constantín</h5> 
+                  <p class="card-text">03/22</p>
+                </div>
+               <img src="https://picsum.photos/id/44/367/267" class="card-img-top" alt="Error">
+                <p class="card-text fw-bold px-2 m-0">15.503 ♥Likes</p>
+                <p class="card-text px-2 pb-2">La niebla llega despacio, como un susurro que envuelve el mundo en silencio. Borra los contornos de los árboles, esconde los caminos y hace que todo parezca un sueño. El aire se vuelve frío, y los sonidos se apagan como si el tiempo se detuviera. No hay prisa en la niebla, solo una calma blanca que cubre la tierra y desaparece igual que vino, sin dejar huella, dejando solo el recuerdo de su paso leve y misterioso.</p>
+              </div>              
+        </div><!--post fin 3-->
+        <div class="card m-4" style="width: 40rem;">
+             <div class="card-body p-0 ">
+                <div class=" d-flex justify-content-between p-2">
+                  <h5 class="card-title">Gamer12</h5> 
+                  <p class="card-text">03/22</p>
+                </div>
+               <img src="https://fastly.picsum.photos/id/96/4752/3168.jpg?hmac=KNXudB1q84CHl2opIFEY4ph12da5JD5GzKzH5SeuRVM" class="card-img-top" alt="Error">
+                <p class="card-text fw-bold px-2 m-0">112 ♥Likes</p>
+                <p class="card-text px-2 pb-2">Mira una WII = M!! .</p>
+              </div>              
+        </div><!--post fin 4-->
+        <div class="card m-4" style="width: 40rem;">
+             <div class="card-body p-0 ">
+                <div class=" d-flex justify-content-between p-2">
+                  <h5 class="card-title">Martín</h5> 
+                  <p class="card-text">03/18</p>
+                </div>
+               <img src="https://picsum.photos/id/111/367/267" class="card-img-top" alt="Error">
+                <p class="card-text fw-bold px-2 m-0">10.521 ♥Likes</p>
+                <p class="card-text px-2 pb-2">"Escucha, chico... en esta ciudad, nada se mueve sin que yo lo sepa. Así que, si quieres seguir respirando, más te vale jugar limpio."</p>
+              </div>              
+        </div><!--post fin 5-->
+
+      </div>
+      </div><!--Central fin-->
+  </div><!-- Navs & tabs / Navegaciones y pestañas -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

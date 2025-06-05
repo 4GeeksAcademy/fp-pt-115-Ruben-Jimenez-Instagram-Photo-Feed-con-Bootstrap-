@@ -1,0 +1,9 @@
+body{
+    background: white;
+}
+
+img{
+	width: 100%;
+	aspect-ratio: 2742 / 1828;
+	object-fit: cover;
+}
