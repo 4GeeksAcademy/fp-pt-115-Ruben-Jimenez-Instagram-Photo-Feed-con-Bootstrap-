@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <boby>
   <!-- Navbar -->
@@ -16,7 +17,7 @@
       <!-- Logo instagram -->
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <i class="fa-brands fa-instagram"></i>
+          <i class="bi bi-instagram"></i>
           Instragram
         </a><!-- Logo instagram -->
         <div class="d-flex flex-row">
@@ -80,24 +81,25 @@
     <div class="tab-content container-fluid" id="nav-tabContent">
       <div class="tab-pane fade " id="grid" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"> <!--Cuadricula-->
           <div class="row " >
-            <div class="col-4 p-2"><img src="https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " class="img-fluid" alt="Error"></div>
-            <div class="col-4 p-2"><img src="https://images.pexels.com/photos/13911167/pexels-photo-13911167.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid " alt="Error"></div>
-            <div class="col-4 p-2"><img src="https://picsum.photos/id/44/367/267" class="img-fluid" alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " class="img-fluid" alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://images.pexels.com/photos/13911167/pexels-photo-13911167.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid " alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://picsum.photos/id/44/367/267" class="img-fluid" alt="Error"></div>
           </div>
           <div class="row" >
-            <div class="col-4 p-2"><img src="https://fastly.picsum.photos/id/96/4752/3168.jpg?hmac=KNXudB1q84CHl2opIFEY4ph12da5JD5GzKzH5SeuRVM" class="img-fluid" alt="Error"></div>
-            <div class="col-4 p-2"><img src="https://picsum.photos/id/111/367/267" class="img-fluid" alt="Error"></div>
-            <div class="col-4 p-2"><img src="https://picsum.photos/id/119/367/267" class="img-fluid" alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://fastly.picsum.photos/id/96/4752/3168.jpg?hmac=KNXudB1q84CHl2opIFEY4ph12da5JD5GzKzH5SeuRVM" class="img-fluid" alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://picsum.photos/id/111/367/267" class="img-fluid" alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://picsum.photos/id/119/367/267" class="img-fluid" alt="Error"></div>
           </div>
           <div class="row" >
-            <div class="col-4 p-2"><img src="https://picsum.photos/id/172/367/267 " class="img-fluid" alt="Error"></div>
-            <div class="col-4 p-2"><img src="https://picsum.photos/id/179/367/267" class="img-fluid" alt="Error"></div>
-            <div class="col-4 p-2"><img src="https://picsum.photos/id/183/367/267" class="img-fluid" alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://picsum.photos/id/172/367/267 " class="img-fluid" alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://picsum.photos/id/179/367/267" class="img-fluid" alt="Error"></div>
+            <div class="col-md-4 p-2"><img src="https://picsum.photos/id/183/367/267" class="img-fluid" alt="Error"></div>
           </div>
       </div><!--Cuadricula fin-->
-      <div class="tab-pane fade show active d-flex flex-column align-items-center " id="central" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"> <!--Central-->
-        <div class="card m-4" style="width: 40rem;">
-             <div class="card-body p-0 ">
+
+      <div class="row  tab-pane fade show active d-flex align-items-center justify-content-center container-fluid" id="central" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"> <!--Central-->
+        <div class=" col-7 card m-4" style="width: 40;">
+             <div class="card-body  p-0 ">
                 <div class=" d-flex justify-content-between p-2">
                   <h5 class="card-title">Garvin St. Villier</h5> 
                   <p class="card-text">02/23</p>
@@ -105,9 +107,10 @@
                <img src="https://images.pexels.com/photos/831475/pexels-photo-831475.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 " class="card-img-top" alt="Error">
                 <p class="card-text fw-bold px-2 m-0">203 ♥Likes</p>
                 <p class="card-text px-2 pb-2">Dicen que los coches rojos llaman más la atención.</p>
-              </div>              
+              </div> 
+
         </div><!--post fin-->
-        <div class="card m-4" style="width: 40rem;">
+        <div class=" col-7 card m-4" style="width: 40;">
              <div class="card-body p-0 ">
                 <div class=" d-flex justify-content-between p-2">
                   <h5 class="card-title">Blessing</h5> 
@@ -118,7 +121,7 @@
                 <p class="card-text px-2 pb-2">"Datsun: donde la herencia japonesa se encuentra con la pasión por la carretera."</p>
               </div>              
         </div><!--post fin 2-->
-        <div class="card m-4" style="width: 40rem;">
+        <div class=" col-7 card m-4" style="width: 40;">
              <div class="card-body p-0 ">
                 <div class=" d-flex justify-content-between p-2">
                   <h5 class="card-title">Constantín</h5> 
@@ -129,7 +132,7 @@
                 <p class="card-text px-2 pb-2">La niebla llega despacio, como un susurro que envuelve el mundo en silencio. Borra los contornos de los árboles, esconde los caminos y hace que todo parezca un sueño. El aire se vuelve frío, y los sonidos se apagan como si el tiempo se detuviera. No hay prisa en la niebla, solo una calma blanca que cubre la tierra y desaparece igual que vino, sin dejar huella, dejando solo el recuerdo de su paso leve y misterioso.</p>
               </div>              
         </div><!--post fin 3-->
-        <div class="card m-4" style="width: 40rem;">
+        <div class=" col-7 card m-4" style="width: 40;">
              <div class="card-body p-0 ">
                 <div class=" d-flex justify-content-between p-2">
                   <h5 class="card-title">Gamer12</h5> 
@@ -140,7 +143,7 @@
                 <p class="card-text px-2 pb-2">Mira una WII = M!! .</p>
               </div>              
         </div><!--post fin 4-->
-        <div class="card m-4" style="width: 40rem;">
+        <div class=" col-7 card m-4" style="width: 40;">
              <div class="card-body p-0 ">
                 <div class=" d-flex justify-content-between p-2">
                   <h5 class="card-title">Martín</h5> 
